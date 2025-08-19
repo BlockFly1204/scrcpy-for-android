@@ -8,7 +8,7 @@
 
 - [![Latest Release](https://img.shields.io/github/v/release/BlockFly1204/scrcpy-for-android?label=Release&logo=github)](https://github.com/BlockFly1204/scrcpy-for-android/releases/latest)
 - [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?logo=Apache)](https://www.apache.org/licenses/LICENSE-2.0.html)
-- [![GitHub License](https://img.shields.io/github/license/BlockFly1204/scrcpy-for-android?logo=Apache)](/LICENSE)
+- ![GitHub License](https://img.shields.io/github/license/BlockFly1204/scrcpy-for-android?logo=Apache&color=orange)](/LICENSE)
 
 
 ## 功能特性
