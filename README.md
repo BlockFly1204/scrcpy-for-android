@@ -1,8 +1,8 @@
-<img src="icon.svg" width="128" height="128" alt="scrcpy" align='right'>
-
 # 本项目使用 Manus AI 开发
 
 # Scrcpy for Android
+
+<img src="icon.svg" width="128" height="128" alt="scrcpy" align='right'>
 
 一个基于scrcpy的Android应用程序，实现Android设备间的无线屏幕镜像和远程控制功能。
 
