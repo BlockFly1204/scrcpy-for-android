@@ -1,0 +1,212 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.innatedream.scrcpyandroid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:6:5-79
+12-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+13-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:8:5-76
+14-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:9:5-76
+15-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:9:22-73
+16    <uses-permission
+16-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:10:5-108
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:10:22-78
+18        android:maxSdkVersion="28" />
+18-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:10:79-105
+19    <uses-permission
+19-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:11:5-107
+20        android:name="android.permission.READ_EXTERNAL_STORAGE"
+20-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:11:22-77
+21        android:maxSdkVersion="28" />
+21-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:11:78-104
+22    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+22-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:12:5-82
+22-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:12:22-79
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+23-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:13:5-77
+23-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:13:22-74
+24    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+24-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:14:5-78
+24-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:14:22-75
+25
+26    <permission
+26-->[androidx.core:core:1.12.0] /home/ubuntu/.gradle/caches/transforms-4/97ed1cb9b33be94019d4d3687a397d12/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+27        android:name="com.innatedream.scrcpyandroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.12.0] /home/ubuntu/.gradle/caches/transforms-4/97ed1cb9b33be94019d4d3687a397d12/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.12.0] /home/ubuntu/.gradle/caches/transforms-4/97ed1cb9b33be94019d4d3687a397d12/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.innatedream.scrcpyandroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.12.0] /home/ubuntu/.gradle/caches/transforms-4/97ed1cb9b33be94019d4d3687a397d12/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.12.0] /home/ubuntu/.gradle/caches/transforms-4/97ed1cb9b33be94019d4d3687a397d12/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:16:5-54:19
+33        android:allowBackup="true"
+33-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:17:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.12.0] /home/ubuntu/.gradle/caches/transforms-4/97ed1cb9b33be94019d4d3687a397d12/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+35        android:dataExtractionRules="@xml/data_extraction_rules"
+35-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:18:9-65
+36        android:debuggable="true"
+37        android:extractNativeLibs="true"
+38        android:fullBackupContent="@xml/backup_rules"
+38-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:19:9-54
+39        android:icon="@mipmap/ic_launcher"
+39-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:20:9-43
+40        android:label="@string/app_name"
+40-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:21:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:22:9-54
+42        android:supportsRtl="true"
+42-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:23:9-35
+43        android:theme="@style/Theme.ScrcpyAndroid" >
+43-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:24:9-51
+44        <activity
+44-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:25:9-35:20
+45            android:name="com.innatedream.scrcpyandroid.MainActivity"
+45-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:26:13-41
+46            android:exported="true"
+46-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:27:13-36
+47            android:label="@string/app_name"
+47-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:28:13-45
+48            android:theme="@style/Theme.ScrcpyAndroid" >
+48-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:29:13-55
+49            <intent-filter>
+49-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:30:13-34:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:31:17-69
+50-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:31:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:33:17-77
+52-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:33:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:37:9-41:58
+56            android:name="com.innatedream.scrcpyandroid.FloatingControlsActivity"
+56-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:38:13-53
+57            android:exported="false"
+57-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:39:13-37
+58            android:label="悬浮控制"
+58-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:40:13-33
+59            android:theme="@style/Theme.ScrcpyAndroid" />
+59-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:41:13-55
+60        <activity
+60-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:43:9-47:58
+61            android:name="com.innatedream.scrcpyandroid.FileTransferActivity"
+61-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:44:13-49
+62            android:exported="false"
+62-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:45:13-37
+63            android:label="文件传输"
+63-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:46:13-33
+64            android:theme="@style/Theme.ScrcpyAndroid" />
+64-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:47:13-55
+65        <activity
+65-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:49:9-53:58
+66            android:name="com.innatedream.scrcpyandroid.TerminalActivity"
+66-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:50:13-45
+67            android:exported="false"
+67-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:51:13-37
+68            android:label="终端"
+68-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:52:13-31
+69            android:theme="@style/Theme.ScrcpyAndroid" />
+69-->/home/ubuntu/scrcpy-android-app/app/src/main/AndroidManifest.xml:53:13-55
+70        <activity
+70-->[androidx.compose.ui:ui-test-manifest:1.5.4] /home/ubuntu/.gradle/caches/transforms-4/bbc87a9b0bdcbc17f2051f67fadbaf5a/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
+71            android:name="androidx.activity.ComponentActivity"
+71-->[androidx.compose.ui:ui-test-manifest:1.5.4] /home/ubuntu/.gradle/caches/transforms-4/bbc87a9b0bdcbc17f2051f67fadbaf5a/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
+72            android:exported="true" />
+72-->[androidx.compose.ui:ui-test-manifest:1.5.4] /home/ubuntu/.gradle/caches/transforms-4/bbc87a9b0bdcbc17f2051f67fadbaf5a/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
+73        <activity
+73-->[androidx.compose.ui:ui-tooling-android:1.5.4] /home/ubuntu/.gradle/caches/transforms-4/b22634513c33837196deee8f7b553a94/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+74            android:name="androidx.compose.ui.tooling.PreviewActivity"
+74-->[androidx.compose.ui:ui-tooling-android:1.5.4] /home/ubuntu/.gradle/caches/transforms-4/b22634513c33837196deee8f7b553a94/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+75            android:exported="true" />
+75-->[androidx.compose.ui:ui-tooling-android:1.5.4] /home/ubuntu/.gradle/caches/transforms-4/b22634513c33837196deee8f7b553a94/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+79            android:authorities="com.innatedream.scrcpyandroid.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.4.0] /home/ubuntu/.gradle/caches/transforms-4/e73ff237b5a3dd066c865eb1caab265b/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/ubuntu/.gradle/caches/transforms-4/ed16f3f68b62f789b52349889574c835/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/ubuntu/.gradle/caches/transforms-4/ed16f3f68b62f789b52349889574c835/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/ubuntu/.gradle/caches/transforms-4/ed16f3f68b62f789b52349889574c835/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <receiver
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+93            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+94            android:directBootAware="false"
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+95            android:enabled="true"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+96            android:exported="true"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+97            android:permission="android.permission.DUMP" >
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+99                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+102                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+105                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+108                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/ubuntu/.gradle/caches/transforms-4/b3186c75465f325652a91648056288eb/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+109            </intent-filter>
+110        </receiver>
+111    </application>
+112
+113</manifest>
