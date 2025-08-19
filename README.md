@@ -6,9 +6,10 @@
 
 一个基于scrcpy的Android应用程序，实现Android设备间的无线屏幕镜像和远程控制功能。
 
-- [![最新发行](https://img.shields.io/github/v/release/BlockFly1204/scrcpy-for-android?label=Release&logo=github)](https://github.com/BlockFly1204/scrcpy-for-android/releases/latest)
-- [![协议: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?logo=Apache)](https://www.apache.org/licenses/LICENSE-2.0.html)
-- [![GitHub 协议](https://img.shields.io/github/license/BlockFly1204/scrcpy-for-android?logo=Apache)](/LICENSE)
+- [![Latest Release](https://img.shields.io/github/v/release/BlockFly1204/scrcpy-for-android?label=Release&logo=github)](https://github.com/BlockFly1204/scrcpy-for-android/releases/latest)
+- [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-orange.svg?logo=Apache)](https://www.apache.org/licenses/LICENSE-2.0.html)
+- [![GitHub License](https://img.shields.io/github/license/BlockFly1204/scrcpy-for-android?logo=Apache)](/LICENSE)
+
 
 ## 功能特性
 
