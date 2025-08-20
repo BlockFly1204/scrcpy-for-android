@@ -37,7 +37,7 @@ jobs:
           build-tools;34.0.0
 
     - name: Accept Android SDK licenses
-      run: yes | sdkmanager --licenses
+      run: echo y | sdkmanager --licenses || true
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
@@ -88,4 +88,5 @@ jobs:
         prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
