@@ -3,6 +3,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ScrcpyAndroid" parent="Theme.Material3.DayNight">
         <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>
 
