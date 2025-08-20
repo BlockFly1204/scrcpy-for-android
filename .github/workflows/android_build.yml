@@ -26,13 +26,14 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
 
+    - name: Accept Android SDK licenses
+      run: yes | sdkmanager --licenses
+
     - name: Set up Android SDK
       uses: android-actions/setup-android@v3
       with:
         cmdline-tools-version: latest
         accept-android-sdk-licenses: true
-        # The 'packages' input expects a multi-line string, not a YAML sequence directly.
-        # Each package should be on a new line, indented correctly under 'packages:'.
         packages: |
           platform-tools
           platforms;android-34
