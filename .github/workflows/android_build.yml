@@ -36,10 +36,7 @@ jobs:
           build-tools;34.0.0
 
     - name: Accept Android SDK licenses
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y expect
-        expect -c 'spawn /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses; expect "Review licenses that have not been accepted (y/N)?"; send "y\r"; interact'
+      run: yes | /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
