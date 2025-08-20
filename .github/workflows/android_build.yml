@@ -36,7 +36,8 @@ jobs:
           build-tools;34.0.0
 
     - name: Accept Android SDK licenses
-      run: yes | /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
+      run: |
+        yes | /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
