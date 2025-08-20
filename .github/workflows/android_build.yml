@@ -31,10 +31,12 @@ jobs:
       with:
         cmdline-tools-version: latest
         accept-android-sdk-licenses: true
-        packages:
-          - platform-tools
-          - platforms;android-34
-          - build-tools;34.0.0
+        # The 'packages' input expects a multi-line string, not a YAML sequence directly.
+        # Each package should be on a new line, indented correctly under 'packages:'.
+        packages: |
+          platform-tools
+          platforms;android-34
+          build-tools;34.0.0
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
