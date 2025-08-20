@@ -26,8 +26,15 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
 
-    - name: Setup Android SDK
+    - name: Set up Android SDK
       uses: android-actions/setup-android@v3
+      with:
+        api-level: 34  # 对应您项目中的 compileSdk 和 targetSdk
+        build-tools: 34.0.0 # 对应您项目中的 buildToolsVersion
+        ndk: 25.1.8937393 # 如果您的项目使用了NDK，请添加此行，否则可以省略
+        cmake: 3.22.1 # 如果您的项目使用了CMake，请添加此行，否则可以省略
+        accept-android-sdk-licenses: true
+        # packages: tools platform-tools  # 这两项通常会自动安装，可以省略
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
