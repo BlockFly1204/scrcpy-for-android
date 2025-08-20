@@ -10,7 +10,58 @@ es: ntarmuee:
                m a kpeu:l l3_.r2e2q.u1e s#t :如
                果 您的 项 目 使b用了rCaMnackhees，请:取
                消 注 释 并 调 整版 本
-               -   m a i n 
+name: Android CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: latest
+          accept-android-sdk-licenses: true
+          packages:
+            - platform-tools
+            - platforms;android-34
+            - build-tools;34.0.0
+
+      - name: Build debug APK
+        run: ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: app/build/outputs/apk/debug/app-debug.apk
                        p a c-k amgaesst:e
                        r 
                             w o r k f l o w _-d ipslpaattfcohr:m
