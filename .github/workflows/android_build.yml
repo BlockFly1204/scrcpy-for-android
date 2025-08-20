@@ -30,11 +30,13 @@ jobs:
       uses: android-actions/setup-android@v3
       with:
         cmdline-tools-version: latest
-        accept-android-sdk-licenses: true
         packages: |
           platform-tools
           platforms;android-34
           build-tools;34.0.0
+
+    - name: Accept Android SDK licenses
+      run: yes | sdkmanager --licenses
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
