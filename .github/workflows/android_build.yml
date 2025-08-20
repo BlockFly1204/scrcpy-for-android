@@ -30,11 +30,21 @@ jobs:
       uses: android-actions/setup-android@v3
       with:
         cmdline-tools-version: latest
-        accept-android-sdk-licenses: true
         packages: |
           platform-tools
           platforms;android-34
           build-tools;34.0.0
+
+    - name: Accept Android SDK licenses
+      run: |
+        mkdir -p $ANDROID_SDK_ROOT/licenses/
+        echo "8933bad161af4178b11852feb1da67946579d5ee" > $ANDROID_SDK_ROOT/licenses/android-sdk-license
+        echo "84831b69689c56e5252f93443ed76b50d6530465" > $ANDROID_SDK_ROOT/licenses/android-sdk-preview-license
+        echo "d975f75169c6993977b1769eb75b6175638e3090" > $ANDROID_SDK_ROOT/licenses/android-googletv-license
+        echo "3376b2f663435860e3ee75d609e300a083d116e6" > $ANDROID_SDK_ROOT/licenses/android-wear-license
+        echo "24333d8a63b6824c95bdcc82d309f8569babe84e" > $ANDROID_SDK_ROOT/licenses/google-gdk-license
+        echo "428cd6d1c5f71a62968d4b830a36391aec5ac542" > $ANDROID_SDK_ROOT/licenses/third-party-licenses
+        echo "e79a4d6e7e0a7589b334c62e7a20227a19b2827a" > $ANDROID_SDK_ROOT/licenses/mips-android-sysimage-license
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
