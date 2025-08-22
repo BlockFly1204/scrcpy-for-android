@@ -34,14 +34,13 @@ jobs:
           platform-tools
           platforms;android-34
           build-tools;34.0.0
-        # Removed accept-android-sdk-licenses: true
+
+    - name: Install expect
+      run: sudo apt-get update && sudo apt-get install -y expect
 
     - name: Accept Android SDK licenses
-      run: yes | sdkmanager --licenses
-
-    - name: Install Android SDK components
       run: |
-        yes | sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+        expect -c 'spawn sdkmanager --licenses; expect { "Review licenses that have not been accepted (y/N)?" { send "y\r"; exp_continue } "Do you accept the license (y/N)?" { send "y\r"; exp_continue } eof }'
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
